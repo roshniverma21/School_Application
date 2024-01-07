@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Send Messages</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/navbar.css" />
+<link rel="stylesheet" type="text/css" href="css/sidenav.css" />
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<link rel="stylesheet" type="text/css" href="css/send_message.css" />
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   
+    
+<script type="text/javascript" src="js/vendor/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/navbar.js"></script>
+<script type="text/javascript" src="js/font/font.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+</head>
+    
+<body>
+        
+<!--        FOR SIDENAV-->
+
+<div id="mySidenav" class="sidenav">
+    <div class="sidebar-header">
+        <div class="user-pic">
+            <img class="school_logo" src="download.png"   >
+        </div>
+</div>         
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+  <br><a href="profile.html"><i  class='fas fa-user ' style="font-size:30px" ></i> Admin's Profile  </a>
+    <a href="teacher_form.html"><i  class='fas fa-chalkboard-teacher' style="font-size:24px" ></i>Teacher's Form </a>
+  <a href="upload_teacher_info.html" ><i class= "fas fa-file-upload" style="font-size:30px"></i> Teacher's Upload</a>
+  <a href="student_form.html"><i  class=" 	fa fa-book-reader" style="font-size:29px"></i>Student's Form</a>
+  <a href="upload_student_info.html" ><i class= "fas fa-file-upload" style="font-size:30px"></i> Student's Upload</a>
+  <a href="message_classes.html" ><i class= "fa fa-envelope" style="font-size:23px"></i> Messages</a>
+  <a href="promote_student.html"><i class="fa fa-graduation-cap"style="font-size:20px" ></i> Promote </a> 
+  <a href="index.html"><i class="fas fa-sign-out-alt" style="font-size:27px" ></i>Log Out</a>
+</div
+        
+<!--       FOR HEADER -->
+<nav class="navbar navbar-default navbar-expand-xl navbar-light">
+	<div class="navbar-header d-flex col">
+        <div class="topnav">
+            <a class="navbar-brand" style="font-size:25px " href="send_message.html" >Send Messages</a>
+            <button class="btn" style="font-size:30px;cursor:pointer " onclick="openNav()"><i class="fa fa-bars"></i></button>
+        </div>
+	</div>
+</nav>
+
+<br>
+    
+
+<div class="container contact">
+	<div class="row">
+		<div class="col-md-0.5">
+			<div class="contact-info">
+				
+				
+			</div>
+		</div>
+		<div class="col-md-11">
+			<div class="contact-form">
+				<div class="form-group">
+				  <label class="control-label col-sm-3" for="fname">Subject:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="fname" placeholder="Enter: " name="fname">
+				  </div>
+				<br>
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="comment">Message:</label>
+				  <div class="col-sm-10">
+					<textarea class="form-control" rows="10" id="comment"></textarea>
+				  </div>
+				</div>
+				<div class="form-group">        
+<div class="col-sm-offset-2 col-sm-10">
+                      
+<button id="myBtn">Send</button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+     
+    </div>
+    <div class="modal-body">
+      <p>Messages Successfully Sent!!</p>
+    </div>
+    <div class="modal-footer">
+      
+    </div> 
+  </div>
+		  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+<script> 
+    //for button on click
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}</script>
+    
+
+</body>
+    </html>
+ 

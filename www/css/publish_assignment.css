@@ -1,0 +1,50 @@
+
+#view_attendance {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 35%;
+  margin-left: 32%;
+  margin-right: 32%;
+    
+ 
+}
+
+#view_attendance td, #view_attendance th {
+  border: 1px solid #003366 ;
+  padding: 10px;
+   
+}
+#view_attendance td input
+{
+    width: 37%;
+}
+
+#view_attendance tr:nth-child(even){background-color: #fff;}
+
+#view_attendance tr:hover {background-color: #a9a9a9;}
+
+#view_attendance th {
+  padding-top: 12px;
+  text-align: left;
+  background-color: #003366;
+  color: #FFCC00;
+}
+.name
+{
+    background-color: #a9a9a9;
+    color: #003366;
+   width: 30%;
+}
+
+.name1
+{
+    background-color: #003366;
+    color: #FFCC00;
+    
+   
+}
+.name2
+{
+    width: 5%;
+    align-content: center;
+}

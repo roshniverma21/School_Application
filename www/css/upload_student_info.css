@@ -1,0 +1,244 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
+
+$border-radius-base: 0.1875em;
+$border-color-base: #FFCC00;
+$text-color-base: #003366;
+$font-size-base: 16px;
+
+
+
+.form-group {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: yellow;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.file__native {
+  width: 1px;
+  height: 1px;
+	opacity: 0;
+  overflow: hidden;
+  position: absolute;
+    margin-top: 10px;
+}
+
+.file__label {
+    margin-left: 23%;
+    cursor: pointer;
+    font-size: 1em;
+	padding: 0.5em;
+	background-color:#003366 ;
+    color: #FFCC00;
+    border: solid 3px   #FFCC00;
+    font-weight: 900;
+    width: 55%;
+    height: 35%;
+    border-radius: 80px;
+   
+}
+.file__label:hover
+{
+    background-color: #FFCC00;
+    color: #003366;
+   border: solid 2px #003366;
+  
+}
+.file__list {
+	margin-top: 2.25em;
+}
+
+.file__list-item {
+  display: flex;  
+  padding: 0.625em;
+  border: 1px solid #003366;
+  margin-bottom: 0.625em;
+    background-color: #FFCC00;
+  border-radius: $border-radius-base;
+  font-size: 0.875em;
+  color: currentColor;
+  transition: 500ms ease-in-out;
+  animation: push 500ms ease-in-out;
+    margin-right: 10%;
+    margin-left: 10%;
+     border-radius: 8px;
+}
+
+.file__list-item::before {
+  font-family: "FontAwesome";
+  content: "\f03e";
+  margin-right: 0.625em;
+}
+
+.file__delete-button {
+  font-size: 100%;
+  margin-left: auto;
+  color: currentColor;
+  background: #FFCC00;
+border: 0%;
+   
+}
+
+@keyframes push {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}    
+  .navbar-header.col {
+		padding: 0 !important;
+    width: 100%;
+	}	
+	.navbar {		
+		background: #003366;
+		box-shadow: 0 0 4px rgba(0,0,0,.1);
+        width:100%;
+	}
+	
+
+   
+    .navbar .btn
+    {   color: #FFCC00;
+        background-color: #003366; 
+    }
+	.navbar .navbar-brand {
+        margin-top: 0%;
+		color: #FFCC00;
+        float: right;
+        font-family: 'Merienda One', sans-serif;
+	}
+	.navbar .navbar-brand:hover {
+        color: #CCCCCC;   
+	}
+
+ 
+	.navbar .nav-item i {
+		font-size: 18px;
+	}
+	.navbar .dropdown-item i {
+		font-size: 16px;
+		min-width: 22px;
+	}
+	.navbar .nav-item.open > a {
+		background: none !important;
+	}
+	.navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
+		background:grey;
+    
+	}
+	@media (min-width: 1200px){
+		.form-inline .input-group {
+			width: 300px;
+			margin-left: 30px;
+		}
+	}
+	@media (max-width: 1199px){
+		.form-inline {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.input-group {
+			width: 100%;
+		}
+	}
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+.frame {
+  height: 50%;
+  width:35%;
+  margin: auto;
+  margin-top: 2rem;
+  background: #003366 ;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 2fr 7fr 2fr;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.app {
+  background: #ccc;
+  grid-area: 2 / 2 / 3 / 3;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+}
+
+.header {
+  background: #fff;
+  grid-area: 1 / 1 / 2 / 1;
+  border-radius: 10px 10px 0 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: #003366;
+  text-shadow: 20%;
+    font-size: 100%;
+  
+}
+
+.content {
+  background: #fff;
+  grid-area: 2 / 1 / 3 / 1;
+  border-radius: 0 0 10px 10px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 0fr 0fr 0fr;
+/*  grid-template-columns: repeat(18, 1fr);*/
+  grid-gap: 0;
+    align-content: center;
+    align-items: center;
+  
+    
+}
+ .custom-select1
+  position: relative;
+  width: 90%;
+  height: 90%;
+margin-left :5%;
+
+   
+}
+
+.custom-select1:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color:  #CCCCCC transparent transparent transparent;
+    margin-left :5%;
+  pointer-events: none;
+}
+
+ .custom-select1 select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 90%;
+  height: 90%;
+  border: 0px;
+     margin-left :5%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid  #CCCCCC;
+  border-radius: 3px;
+}
+
+
+ .custom-select1 select:focus{
+  border: 1px solid #CCCCCC;
+}
+

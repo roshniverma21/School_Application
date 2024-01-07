@@ -1,0 +1,154 @@
+body{
+    background-color: #CCCCCC;
+    width: 100%;
+	}
+.row
+{
+    margin-left:10%;
+    margin-right: 10%;
+    
+}
+	.contact{
+         border-radius: 25px;
+		padding: 2%;
+		height: 400px;
+        
+	}
+
+
+.form-control:hover
+{
+       
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+	
+	.col-md-11{
+        
+       
+		background: #003366;
+		padding: 3%;
+        border-radius: 15px;
+       
+	}
+	.contact-form label{
+		font-weight:2000;
+        font: #FFCC00;
+        color: #FFCC00;
+        text-decoration-color: #FFCC00;
+
+	}
+
+#myBtn
+{
+    background-color:#FFCC00 ;
+    color:  #003366;
+    border-bottom-color:#CCCCCC;
+    text-align: center;
+    text-justify: none;
+    margin-top: 10px;
+    float:right;
+   
+    font-weight: 600;
+    width: 30%;
+    height: 35px;
+    border-radius: 20px;
+}
+#myBtn:hover
+{
+    background-color: #CCCCCC ;
+    color: #003366;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+    font-weight: 1000;
+    font-size: 35px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    font-size: 50px;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  border: px solid #FFCC00;
+  width: 60%;
+    height: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+      
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #FFCC00;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover{
+    color: #CCCCCC;
+    
+}
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 0px 16px;
+  background-color: #003366;
+  color: #FFCC00;
+    font-size: 16px;
+    
+}
+
+.modal-body {
+    font-weight: 1000;
+    font-size: 35px;
+    text-align: center;
+    background-color:#FFF;
+    color: #003366;
+    text-align: center;
+    width: 100%;
+    margin-top: 12px;
+    font-size: 40px; padding: 2px 16px;}
+   
+
+.modal-footer {
+  padding: 8px 30px;
+  background-color: #003366;
+  color: #003366;
+}
+
+
+

@@ -1,0 +1,160 @@
+<html>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload Student's Information </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+
+<link rel="stylesheet" type="text/css" href="css/teacher_form.css" />
+<link rel="stylesheet" type="text/css" href="css/sidenav.css" />
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<link rel="stylesheet" type="text/css" href="css/upload_student_info.css" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   
+    
+<script type="text/javascript" src="js/vendor/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/navbar.js"></script>
+<script type="text/javascript" src="js/font/font.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+
+<script type="text/javascript" src="vendor/upload.css"></script>
+
+    </head>
+    
+    
+    <body>
+        <!--        FOR SIDENAV-->
+
+<div id="mySidenav" class="sidenav">
+    <div class="sidebar-header">
+        <div class="user-pic">
+            <img class="school_logo" src="download.png"   >
+        </div>
+    </div>
+      
+   
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <br> <a href="profile.html"><i  class='fas fa-user ' style="font-size:30px" ></i> Admin's Profile  </a>
+    <a href="teacher_form.html"><i  class='fas fa-chalkboard-teacher' style="font-size:24px" ></i>Teacher's Form </a>
+    <a href="upload_teacher_info.html" ><i class= "fas fa-file-upload" style="font-size:30px"></i> Teacher's Upload</a>
+  <a href="student_form.html"><i  class=" 	fa fa-book-reader" style="font-size:29px"></i>Student's Form</a>
+    <a href="upload_student_info.html" ><i class= "fas fa-file-upload" style="font-size:30px"></i> Student's Upload</a>
+  <a href="message_classes.html" ><i class= "fa fa-envelope" style="font-size:23px"></i> Messages</a>
+  <a href="promote_student.html"><i class="fa fa-graduation-cap"style="font-size:20px" ></i> Promote </a> 
+  <a href="index.html"><i class="fas fa-sign-out-alt" style="font-size:27px" ></i>Log Out</a>
+</div>
+        
+<!--       FOR HEADER -->
+<nav class="navbar navbar-default navbar-expand-xl navbar-light">
+	<div class="navbar-header d-flex col">
+        <div class="topnav">
+            <a class="navbar-brand" style="font-size:25px " href="post_assignments.html" >Student's Information </a>
+            <button class="btn" style="font-size:30px;cursor:pointer " onclick="openNav()"><i class="fa fa-bars"></i></button>
+        </div>
+	</div>
+</nav>
+
+        <br>
+<div class="form-group">
+<div class="frame">
+  <div class="app">
+    <div class="header">Upload Student's Information</div>
+    <div class="content">
+        
+        
+<!--    <label>class: -->
+        <div class="inputfield1">
+            <div class="custom-select1">
+             <select>
+              <option value="">Select Class</option>
+              <option value="class1">1st Class</option>
+              <option value="class2">2nd Class</option>
+              <option value="class3">3rd Class</option>
+              <option value="class4">4th Class</option>
+              <option value="class5">5th Class</option>
+              <option value="class6">6th Class</option>
+             </select>
+          </div>
+       </div> 
+<!--        </label>-->
+
+		<label class="file__label" for="upload">
+            <i class="fas fa-paperclip"></i>Upload File !</label>
+        <input type="file" class="file__native" name="upload" id="upload" />
+
+      </div>
+    </div>
+</div>
+<ul class="file__list"></ul>
+</div>
+
+
+        
+        
+        
+ </body>
+    
+    
+<script>
+    var inputs = document.querySelectorAll( 'input[type="file"]' );
+var fileList= document.querySelector('.file__list');
+
+Array.prototype.map.call( inputs, function( input ) {
+  input.addEventListener( 'change', function( e ) {
+    
+    //get file
+    var file= e.target;
+    
+    //get file name and clean it
+    var fileName = file.value.split( '\\' ).pop(); 
+    
+    //get file size 
+    var fileSize = convertFileSize(file);
+
+    //set file name as: "fileName - fileSize"
+    fileName = setFileFullName(fileName, fileSize);
+    
+    //create a file list item
+    var fileListItem = document.createElement("li");
+      fileListItem.classList.add('file__list-item');
+      fileListItem.appendChild(document.createTextNode(fileName));
+      
+    //create a delete button for file list item
+    var deleteFileButton= document.createElement("button");
+    deleteFileButton.classList.add('file__delete-button');
+    deleteFileButton.appendChild(document.createTextNode("x"));
+    deleteFileButton.addEventListener( 'click', function( e ) {
+      fileList.removeChild(e.target.parentNode);
+    });
+    
+    //add delete button to file list item
+    fileListItem.appendChild(deleteFileButton);
+    
+    //add file list item to file list
+    fileList.appendChild(fileListItem);
+  });
+});
+
+function convertFileSize(file) {
+  var fileSize= file.files[0].size;
+  if(fileSize < 1000000){
+    fileSize = fileSize/1000 + ' KB';
+  }
+  else {
+    fileSize = fileSize/1000000 + ' MB';  
+  }
+  return fileSize;
+}
+
+function setFileFullName(name, size) {
+  return name+" - "+size;
+}</script>
+</html>

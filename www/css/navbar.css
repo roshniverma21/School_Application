@@ -1,0 +1,59 @@
+
+
+.navbar-header.col {
+		padding: 0 !important;
+    width: 100%;
+	}	
+	.navbar {		
+		background: #003366;
+		box-shadow: 0 0 4px rgba(0,0,0,.1);
+        width:100%;
+	}
+	
+
+   
+    .navbar .btn
+    {   color: #FFCC00;
+        background-color: #003366; 
+    }
+	.navbar .navbar-brand {
+        margin-top: 1.5%;
+		color: #FFCC00;
+        float: right;
+        font-family: 'Merienda One', sans-serif;
+	}
+	.navbar .navbar-brand:hover {
+        color: #CCCCCC;   
+	}
+
+ 
+	.navbar .nav-item i {
+		font-size: 18px;
+	}
+	.navbar .dropdown-item i {
+		font-size: 16px;
+		min-width: 22px;
+	}
+	.navbar .nav-item.open > a {
+		background: none !important;
+	}
+	.navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
+		background:grey;
+    
+	}
+	@media (min-width: 1200px){
+		.form-inline .input-group {
+			width: 300px;
+			margin-left: 30px;
+		}
+	}
+	@media (max-width: 1199px){
+		.form-inline {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.input-group {
+			width: 100%;
+		}
+	}
+    

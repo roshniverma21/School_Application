@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/navbar.css" />
+<link rel="stylesheet" type="text/css" href="css/sidenav.css" />
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<link rel="stylesheet" type="text/css" href="css/profile.css" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<script type="text/javascript" src="js/vendor/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/font/font.js"></script>
+<script type="text/javascript" src="js/navbar.js"></script>
+<script type="text/javascript" src="js/profile.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+
+</head>
+    
+    
+    
+    <body>
+        
+<!--        FOR SIDENAV-->
+
+<div id="mySidenav" class="sidenav">
+    <div class="sidebar-header">
+        <div class="user-pic">
+            <img class="school_logo" src="download.png"   >
+        </div>
+    </div>
+      
+          
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <br> 
+  <a href="profile.html"><i  class='fas fa-user ' style="font-size:30px" ></i> Admin's Profile  </a>
+  <a href="teacher_form.html"><i  class='fas fa-chalkboard-teacher' style="font-size:24px" ></i>Teacher's Form </a>
+  <a href="upload_teacher_info.html" ><i class= "fas fa-file-upload" style="font-size:30px"></i> Teacher's Upload</a>
+  <a href="student_form.html"><i  class=" 	fa fa-book-reader" style="font-size:29px"></i>Student's Form</a>
+  <a href="upload_student_info.html" ><i class= "fas fa-file-upload" style="font-size:30px"></i> Student's Upload</a>
+  <a href="message_classes.html" ><i class= "fa fa-envelope" style="font-size:23px"></i> Messages</a>
+  <a href="promote_student.html"><i class="fa fa-graduation-cap"style="font-size:20px" ></i> Promote </a> 
+  <a href="index.html"><i class="fas fa-sign-out-alt" style="font-size:27px" ></i>Log Out</a>
+</div>
+        
+<!--       FOR HEADER -->
+<nav class="navbar navbar-default navbar-expand-xl navbar-light">
+<div class="navbar-header d-flex col">
+        <div class="topnav">
+            <a class="navbar-brand" style="font-size:25px " href="profile.html" >Admin's Profile</a>
+            <button class="btn" style="font-size:30px;cursor:pointer " onclick="openNav()"><i class="fa fa-bars"></i></button>
+        </div>
+</div>
+    	
+   
+
+	</nav>
+<!--                FOR LOADER-->
+        
+<!--
+<div class="loader" id='popupdiv'>
+    <div class="face face1">
+        <div class="circle"></div>
+    </div>
+    <div class="face face2">
+        <div class="circle"></div>
+    </div>
+</div>
+-->
+ 
+        
+<!--
+        
+FOR FETCHING DATA FROM DATABASE
+-->
+
+<div class="container">    
+<br>
+<div class="preview text-center">
+        <img class="preview-img" src="profile.jpg" alt="Preview Image"  width="150" height="150" />
+            <div class="browse-button">
+                <i  class="fas fa-pencil-alt " style="color: gray"></i>
+                <input class="browse-input" type="file" required name="UploadedFile" id="UploadedFile"/>
+            </div>
+            <span class="Error"></span>
+    </div>
+</div>
+
+
+        
+<!--        FOR TABLE-->
+        
+<div class="container">
+<div class="table-responsive">
+<div  id="table_container">
+<table class="table table-bordered table-striped" id="profile_table">  
+</table>
+</div>
+</div>
+    <button class="button2" onclick="myFunction()">Edit</button>
+</div>
+<!--
+FOR LOADER
+<div class="loader" id="popupdiv">
+    <div class="face face1">
+        <div class="circle"></div>
+    </div>
+    <div class="face face2">
+    <div class="circle"></div>
+    </div>
+</div> 
+-->
+
+        
+ <script type="text/javascript" >populateProfile();
+        function myFunction()
+        {
+        location.replace("edit_profile.html")
+        }
+</script>
+</body>
+</html>

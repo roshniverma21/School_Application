@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <title>Admin Edit Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" type="text/css" href="css/edit_profile1.css" />
+<!--<link rel="stylesheet" type="text/css" href="css/popup.css" />-->
+ 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">    
+
+<script type="text/javascript" src="js/profile.js"></script>
+<script type="text/javascript" src="js/edit_profile.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+</head>
+    
+<body>
+   
+<div class="container bootstrap snippets">
+<div class="row">
+  <div class="col-xs-12 col-sm-9">
+    <form class="form-horizontal" id="profile_edit_table">
+        <div class="panel panel-default">
+          <div class="panel-body text-center">
+
+          </div>
+        </div>
+        <div class="panel-body">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+        <h4 class="panel-title">Admin's Edit Profile</h4>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label">First Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+            <div class="form-group">
+            <label class="col-sm-2 control-label">Last Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+            <div class="form-group">
+            <label class="col-sm-2 control-label">Date Of Birth</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+            <div class="form-group">
+            <label class="col-sm-2 control-label">E-mail</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+            <div class="form-group">
+            <label class="col-sm-2 control-label">Phone Number</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+         
+    </div>
+        
+          <div class="form-group">
+            <label class="col-sm-2 control-label">State</label>
+            <div class="col-sm-10">
+              <select class="form-control">
+                <option selected="">Select country</option>
+                  <option>Delhi</option>
+                <option>Haryana</option>
+                <option>Greater Noida</option>
+                <option>Noida</option>
+                <option>Punjab</option>
+                <option>Assam</option>
+              </select>
+            </div>
+          </div>
+            <div class="form-group">
+            <label class="col-sm-2 control-label">City</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+            <div class="form-group">
+            <label class="col-sm-2 control-label">Street</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Zipcode</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+        <h4 class="panel-title">Security</h4>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Current password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">New password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+
+                 <button class="btn btn-primary" type="submit" onclick="myFunction()">Save</button>
+                <button type="reset" class="btn btn-default" onclick="myFunction()">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>    
+<script>
+        function myFunction() {
+        location.replace("profile.html")
+        }
+</script>
+
+
+</body>
+</html> 
