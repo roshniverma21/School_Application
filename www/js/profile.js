@@ -6,9 +6,9 @@ function populateProfile(){
                     "state":"Haryana",
                     "city":"Gohana",
                     "zipCode":"ABC456",
-                    "street":"Faltu Street",
-                    "firstName":"Aditya",
-                    "lastName":"Bhardwaj",
+                    "street":"abc Street",
+                    "firstName":"abc",
+                    "lastName":"cde",
                     "email":"abc@xyz.com",
                     "phone":"9654025864"};
     student=data;
